@@ -115,7 +115,7 @@ p{
   padding-left: 0;
   padding-right: 0;
   /* height: calc(100vh - 55px); */
-  background-color: #91A1D5;
+  background-color: #f8b901;
 }
 
 #project .heading {
@@ -127,7 +127,7 @@ p{
   font-size: 200%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-
+  color: white;
 }
 
 /* CLIENT */
@@ -152,7 +152,7 @@ p{
   justify-content: center;
   align-items: center;
   padding: 100px 15% 50px;
-  /* color: white; */
+  color: white;
 }
 
 #team h4{
