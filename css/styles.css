@@ -7,8 +7,31 @@ body{
   /* padding: 0 15%; */
 }
 
+#navbarArtha{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/*
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
+
+nav{
+  /* This section calls the slideInFromLeft animation we defined above */
+  /* animation: 0.5s ease-out 0s 1 slideInFromLeft;
+
+  background: #333;
+  padding: 30px; */
+}
+
 .navbar{
   background-color: #000;
+  opacity: 0.8;
 }
 
 .nav-item{
@@ -41,7 +64,7 @@ body{
 
 /* WHAT WE DO */
 #core{
-  background-color: #eeeeee;
+  background-color: #eee;
   /* height: calc(100vh - 55px); */
   justify-content: center;
   align-items: center;
@@ -92,7 +115,7 @@ p{
   padding-left: 0;
   padding-right: 0;
   /* height: calc(100vh - 55px); */
-  /* margin-bottom: 13.5px; */
+  background-color: #eee;
 }
 
 #project .heading {
@@ -109,7 +132,7 @@ p{
 
 /* CLIENT */
 #client{
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 100px 15% 0;
 }
 
