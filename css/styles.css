@@ -58,6 +58,11 @@ nav{
 }
 
 /* TITLE */
+:root {
+  --mouseX: 10%;
+  --mouseY: 10%;
+}
+
 #title{
   background-color: #91A1D5;
   /* background-color: #5a5c95; */
@@ -72,7 +77,7 @@ nav{
 }
 
 .logo{
-
+  position: var(--mouseX) var(--mouseY);
   padding-top: 13%;
   padding-bottom: 75px;
   width: 50%;
