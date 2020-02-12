@@ -52,11 +52,7 @@ $( document ).ready(function() {
       document.getElementById('logoku').style.setProperty('--mouseY', e.clientY * 100 / oh);
 });
 
-  var plane = document.getElementById('logoku');
-  plane.homePos = { x: plane.offsetLeft, y: plane.offsetTop };
-  $('#title').mousemove(function (e) {
-        parallax(e, plane, 100);
-    });
+ 
 });
 
 
