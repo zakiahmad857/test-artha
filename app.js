@@ -42,4 +42,16 @@ $( document ).ready(function() {
       $("#artha-project3-img").attr("src", "images/project/gunung2.jpg");
     }
   );
+
+  var plane = document.getElementById('logoku');
+  $('#wrapper_header').mousemove(function (e) {
+        parallax(e, plane, 80);
+    });
 });
+
+
+function parallax(e, target, layer) {
+    var x = target.homePos.x - (e.pageX - target.homePos.x) / layer;
+    var y = target.homePos.y - (e.pageY - target.homePos.y) / layer;
+    $(target).offset({ top: y ,left : x });
+};
