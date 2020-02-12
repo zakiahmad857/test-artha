@@ -36,11 +36,10 @@ $( document ).ready(function() {
 
   $("#artha-project3-all").hover(
     function() {
-      document.getElementById("uhuy").display = "none";
+      $("#artha-project3-img").attr("src", "images/project/merbabu2.gif");
     },
     function() {
-      $("#uhuy").attr("visibility", "visible");
-      $("#artha-project31-img").attr("visibility", "hidden");
+      $("#artha-project3-img").attr("src", "images/project/gunung2.jpg");
     }
   );
 });
