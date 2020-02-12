@@ -15,7 +15,24 @@ window.onscroll = function() {
 }
 
 // PROJECT - GIFs
+var link = $(this).attr('href');
+
+
+
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(2000);
+}
+
 $( document ).ready(function() {
+
+$('#kuy').fadeOut('slow', function(){
+   //$('#kuy').attr("display","block")
+    $('#kuy').load(link+' #content', function(){
+        $('#kuy').fadeIn('slow');
+    });
+});
+
+
   $("#artha-project1-all").hover(
     function() {
       $("#artha-project1-img").attr("src", "images/project/gedungsate.gif");
