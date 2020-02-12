@@ -36,7 +36,7 @@ $( document ).ready(function() {
 
   $("#artha-project3-all").hover(
     function() {
-      $("#artha-project3-img").attr("src", "images/project/merbabu2.gif");
+      $("#artha-project3-img").attr("src", "uhuuy");
     },
     function() {
       $("#artha-project3-img").attr("src", "images/project/gunung2.jpg");
