@@ -37,9 +37,11 @@ $( document ).ready(function() {
   $("#artha-project3-all").hover(
     function() {
       $("#artha-project3-img").attr("visibility", "hidden");
+      $("#artha-project31-img").attr("visibility", "visible");
     },
     function() {
       $("#artha-project3-img").attr("visibility", "visible");
+      $("#artha-project31-img").attr("visibility", "hidden");
     }
   );
 });
