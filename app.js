@@ -36,10 +36,10 @@ $( document ).ready(function() {
 
   $("#artha-project3-all").hover(
     function() {
-      $("#artha-project3-img").attr("src", "images/project/merbabu2.gif");
+      document.getElementById("artha-project3-img").style.visibility = "hidden";
     },
     function() {
-      $("#artha-project3-img").attr("src", "images/project/gunung2.jpg");
+      document.getElementById("artha-project3-img").style.visibility = "visible";
     }
   );
 });
