@@ -12,7 +12,7 @@ var currentScrollPos = window.pageYOffset;
 
 // function playGif(){
   $(document).ready(function(){
-    alert("hai");
+    //alert("hai");
     $("#artha-project1-all").hover(
       function() {
         $("#artha-project1-img").attr("src", "images/project/gedungsate.gif");
