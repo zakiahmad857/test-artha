@@ -43,6 +43,15 @@ $( document ).ready(function() {
     }
   );
 
+
+  let dde = document.getElementById('title');
+  dde.addEventListener("mousemove", e => {
+      let ow = dde.offsetWidth; 
+      let oh = dde.offsetHeight; 
+      document.getElementById('logoku').style.setProperty('--mouseX', e.clientX * 100 / ow);
+      document.getElementById('logoku').style.setProperty('--mouseY', e.clientY * 100 / oh);
+});
+
   var plane = document.getElementById('logoku');
   plane.homePos = { x: plane.offsetLeft, y: plane.offsetTop };
   $('#title').mousemove(function (e) {
