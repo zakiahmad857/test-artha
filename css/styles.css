@@ -64,7 +64,7 @@ nav{
   /* display: flex;     /* ini tadinya di intro-body */ */
   /* justify-content: center; */
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
   padding-left: 15%;
   padding-right: 15%;
   color: white;
