@@ -36,11 +36,10 @@ $( document ).ready(function() {
 
   $("#artha-project3-all").hover(
     function() {
-      document.getElementById("artha-project3-img").style.visibility = "HIDE-SHOW";
-      document.getElementById("artha-project31-img").style.visibility = "visible";
+      $("#artha-project3-img").attr("visibility", "hidden");
     },
     function() {
-      document.getElementById("artha-project3-img").style.visibility = "visible";
+      $("#artha-project3-img").attr("visibility", "visible");
     }
   );
 });
