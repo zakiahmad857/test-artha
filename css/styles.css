@@ -77,8 +77,8 @@ nav{
 }
 
 .logo{
-  position: var(--mouseX) var(--mouseY);
-  padding-top: 13%;
+  
+  padding-top: 15%;
   padding-bottom: 75px;
   width: 50%;
    
