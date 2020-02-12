@@ -46,7 +46,7 @@ $( document ).ready(function() {
   var plane = document.getElementById('logoku');
   plane.homePos = { x: plane.offsetLeft, y: plane.offsetTop };
   $('#wrapper_header').mousemove(function (e) {
-        parallax(e, plane, 80);
+        parallax(e, plane, 100);
     });
 });
 
