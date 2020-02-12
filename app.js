@@ -1,4 +1,13 @@
-
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    $("#navbarArtha").css({top: '0'});
+  } else {
+    $("#navbarArtha").css({top: '-60px'});
+  }
+  prevScrollpos = currentScrollPos;
+}
 
   // function playGif(){
   // $("document").ready(function(){
