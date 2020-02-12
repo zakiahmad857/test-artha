@@ -36,7 +36,8 @@ $( document ).ready(function() {
 
   $("#artha-project3-all").hover(
     function() {
-      document.getElementById("artha-project3-img").style.visibility = "hidden";
+      document.getElementById("artha-project3-img").style.visibility = "HIDE-SHOW";
+      document.getElementById("artha-project31-img").style.visibility = "visible";
     },
     function() {
       document.getElementById("artha-project3-img").style.visibility = "visible";
