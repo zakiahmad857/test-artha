@@ -44,12 +44,41 @@ $( document ).ready(function() {
   );
 
 
-  let dde = document.getElementById('title');
-  dde.addEventListener("mousemove", e => {
-      let ow = dde.offsetWidth; 
-      let oh = dde.offsetHeight; 
-      document.getElementById('logoku').style.setProperty('--mouseX', e.clientX * 100 / ow);
-      document.getElementById('logoku').style.setProperty('--mouseY', e.clientY * 100 / oh);
+  $('#title').mousemove(
+        function(e){
+            /* Detecta a posição do mouse */
+            var offset = $(this).offset();
+            var xPos = e.pageX - offset.left;
+            var yPos = e.pageY - offset.top;
+
+            var mouseXPercent = Math.round(xPos / $(this).width() * 100);
+            var mouseYPercent = Math.round(yPos / $(this).height() * 100);
+            $(this).children('img').each(
+                function(){
+                    var diffX = $('#title').width() - $(this).width();
+                    var diffY = $('#title').height() - $(this).height();
+
+                    var myX = diffX * (mouseXPercent / 100); //) / 100) / 2;
+
+                    var myY = diffY * (mouseYPercent / 100);
+
+                    var cssObj = {
+                        'left': myX + 'px',
+                        'top': myY + 'px'
+                    }
+                    //$(this).css(cssObj);
+                    $(this).animate({
+                        left: myX, 
+                        top: myY
+                    },
+                    {
+                        duration: 50, 
+                        queue: false, 
+                        easing: 'linear'
+                    });
+
+                }
+            );
 });
 
  
