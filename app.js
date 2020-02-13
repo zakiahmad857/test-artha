@@ -1,3 +1,10 @@
+// lOADER
+$(window).on('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
+
 // NAVBAR SCROLL HIDE-SHOW
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
