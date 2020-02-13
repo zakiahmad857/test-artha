@@ -12,16 +12,20 @@ $(window).on('load', function () {
 
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
-    
-    $('#kuy').fadeOut('slow', function(){
+
+    var link = $(this).attr('href');
+
+    //$('#kuy').fadeOut('slow', function(){
    //$('#kuy').attr("display","block")
     $('#kuy').load(link+' #content', function(){
-        $('#kuy').fadeIn('slow');
+        $('#kuy').fadeIn(2000);
     });
-});
+//});
 });
 
 
+$('#kuy').fadeOut('slow', function(){
+  });
 // NAVBAR SCROLL HIDE-SHOW
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -39,7 +43,7 @@ window.onscroll = function() {
 }
 
 // PROJECT - GIFs
-var link = $(this).attr('href');
+
 
 
 
