@@ -9,8 +9,16 @@ $(window).on('load', function () {
       'overflow': 'auto',
       'height': 'auto'
     })
+
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
+    
+    $('#kuy').fadeOut('slow', function(){
+   //$('#kuy').attr("display","block")
+    $('#kuy').load(link+' #content', function(){
+        $('#kuy').fadeIn('slow');
+    });
+});
 });
 
 
@@ -35,18 +43,9 @@ var link = $(this).attr('href');
 
 
 
-window.fadeIn = function(obj) {
-    $(obj).fadeIn(2000);
-}
+
 
 $( document ).ready(function() {
-
-$('#kuy').fadeOut('slow', function(){
-   //$('#kuy').attr("display","block")
-    $('#kuy').load(link+' #content', function(){
-        $('#kuy').fadeIn('slow');
-    });
-});
 
 
   $("#artha-project1-all").hover(
